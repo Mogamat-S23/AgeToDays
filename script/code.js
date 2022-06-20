@@ -19,10 +19,13 @@ let c = calculate
 c.addEventListener('click', () => {
     let age = document.getElementById('age').value
     let days = age * 365;
-    document.getElementById('days').innerHTML = days;
+    document.getElementById('days').value = days;
+    
     let hours = document.getElementById('hours')
     let minutes = document.getElementById('minutes')
     let seconds = document.getElementById('days')
+
+    
 })
 
 let btnClear = document.getElementById('clear');
@@ -30,7 +33,7 @@ let btnClear = document.getElementById('clear');
 btnClear.addEventListener('click', () => {
     let age = document.getElementById('age')
     age.value = ''
-    document.getElementById('days').innerHTML = ''
+    document.getElementById('days').value = ''
 
 
 });
